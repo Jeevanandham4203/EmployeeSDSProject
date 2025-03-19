@@ -28,12 +28,12 @@ public class EmployeeController {
 	EmployeeService es;
 	//post Single employee Details
 	//http://localhost:8080/emp/PostSingleEmp
-	@PostMapping("/PostSingleEmp")
+	@PostMapping("/PostSingle")
 	public String postEmp(@RequestBody Employee e) {
 		return es.postEmp(e);
 	}
 	//post multiple Employee Details
-	@PostMapping("/PostEmpAll")
+	@PostMapping("/PostAllobject")
 	public List<Employee> postEmpAll(@RequestBody List<Employee> e) {
 		return es.postEmpAll(e);
 	}
